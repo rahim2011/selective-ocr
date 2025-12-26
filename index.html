@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selective OCR</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Selective Image OCR</h1>
+  <input type="file" id="imageInput" accept="image/*">
+  <canvas id="canvas"></canvas>
+
+  <div class="progress-bar">
+    <div class="progress" id="progress"></div>
+  </div>
+
+  <textarea id="resultText" placeholder="Extracted text will appear here..."></textarea>
+  <button id="copyBtn">Copy Text</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
